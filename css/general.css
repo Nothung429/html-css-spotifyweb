@@ -27,4 +27,5 @@ button {
 }
 .main-nav ul li a:hover {
     border-bottom: 1px solid #adff2f;
+    color: #fff;
 }

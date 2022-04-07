@@ -148,6 +148,7 @@ hr {
     text-align: center;
 }
 .album-name p {
+    padding-top: 10px;
     color: #7d7f84;
 }
 .img-overlay.special img {

@@ -83,22 +83,71 @@ hr {
     background-color: #a3a3a3;
 }
 
-/*------ music section ------*/
+/*------ music ------*/
 .music {
     height: calc(100vh - 80px);
-    padding-top: 80px;
+    padding-top: 90px;
+    padding-left: 20px;
     width: calc(100% - 260px);
     overflow-y: auto;
     background-color: #141922;
 }
+.music h3 {
+    font-size: 20px;
+}
+
+/*------ music nav ------*/
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.main-nav ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.main-nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #7d7f84;
+    padding-bottom: 5px;
+}
+.main-nav ul li a:hover {
+    border-bottom: 1px solid #adff2f;
+}
+
 .albums {
     display: flex;
     flex-wrap: wrap;
 }
+
 .album {
-    height: 200px;
-    min-width: 200px;
-    background-color: aqua;
-    margin: 30px;
-    border: 2px solid red;
+    margin: 20px 10px 10px 0;
+    width: calc(100% / 6 - 20px);
+}
+.album i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 40px;
+    color: transparent;
+}
+.album-name {
+    padding-top: 10px;
+    text-align: center;
+}
+.album-name p {
+    color: #7d7f84;
+}
+.img-overlay {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.img-overlay:hover {
+    opacity: 0.6;
+}
+.img-overlay > i:hover {
+    color: #fff;
 }

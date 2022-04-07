@@ -12,7 +12,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <!------ link css ------>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/header&footer.css">
+        <link rel="stylesheet" href="css/main.css">
+
         <title>Spotify</title>
     </head>
 
@@ -109,21 +112,21 @@
         </main>
 
         <footer>
-
+            <!------ footer left ------>
             <div class="footer-left">
-                <div class="f-a-d">
+                <div class="f-left-img">
                     <img src="img/sinister.jpeg" alt="select album">
                     <div class="description">
                         <h4>Sinister</h4>
                         <span>Nome Brano</span>
                     </div>
                 </div>
-                <div class="f-r-icon">
+                <div class="f-left-icon">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
-
+            <!------ footer center ------>
             <div class="footer-center">
                 <div class="player-buttons">
                     <button class="f-btn">
@@ -150,11 +153,21 @@
                     <span>4:35</span>
                 </div>
             </div>
-
+            <!------ footer right ------>
             <div class="footer-right">
-                
+                <button class="f-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button class="f-btn">
+                    <i class="fa-solid fa-display"></i>
+                </button>
+                <button class="f-btn">
+                    <i class="fa-solid fa-volume-high"></i>
+                </button>
+                <div class="bar-played"></div>
+                <div class="circle"></div>
+                <div class="bar-unplayed"></div>
             </div>
-
         </footer>
         
     </body>

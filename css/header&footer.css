@@ -1,0 +1,126 @@
+/*------ header ------*/
+header {
+    height: 80px;
+    width: calc(100% - 260px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background-color: rgba(8, 11, 18, 0.8);
+}
+.upgrade {
+    text-align: right;
+    line-height: 80px;
+    margin-right: 30px;
+}
+.upgrade button {
+    background-color: #080b12;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    border-style: outset;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/*------ footer ------*/
+footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+    height: 80px;
+    padding: 0 8px;
+    background-color: #282828;
+}
+
+/*------ footer columns ------*/
+.footer-left ,.footer-right {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.footer-center {
+    justify-content: center;
+    width: 60%;
+}
+.footer-right {
+    justify-content: flex-end;
+}
+.footer-left {
+    justify-content: space-between;
+}
+
+/*------ footer columns left ------*/
+.footer-left img {
+    margin-right: 6px;
+    width: 60px;
+}
+.f-left-img {
+    display: flex;
+    align-items: center;
+}
+.f-left-icon {
+    display: flex;
+    margin: 5px;
+}
+.f-left-icon i {
+    padding: 5px;
+    color: #717171;
+}
+
+/*------ footer columns center ------*/
+.player-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-btn {
+    background-color: #282828;
+    border: none;
+    color: #fff;
+}
+.f-btn i {
+    padding: 0 10px;
+}
+.play {
+    font-size: 26px;
+}
+
+/*------ footer columns center player bar ------*/
+.player-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-bar span {
+    margin: 0 20px;
+}
+.bar-played {
+    height: 5px;
+    width: 15%;
+    border-radius: 30px;
+    background-color: #c1c1c1;
+}
+.bar-unplayed {
+    height: 5px;
+    width: 35%;
+    border-radius: 30px;
+    background-color: #5a5a5a;
+}
+.circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+}
+
+/*------ footer columns right ------*/
+.footer-right i {
+    margin: 0 10px;
+}
+

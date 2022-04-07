@@ -11,6 +11,9 @@ body {
 img {
     max-width: 100%;
 }
+button {
+    cursor: pointer;
+}
 
 /*------ header ------*/
 header {
@@ -47,7 +50,7 @@ main {
 /*------ sidebar ------*/
 .sidebar {
     width: 260px;
-    max-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -134,7 +137,7 @@ hr {
 
 /*------ music section ------*/
 .music {
-    max-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
     padding-top: 80px;
     width: calc(100% - 260px);
     overflow-y: auto;
@@ -162,6 +165,92 @@ footer {
     align-items: center;
     width: 100%;
     height: 80px;
+    padding: 0 8px;
     background-color: #282828;
-    padding-right: 10px;
 }
+
+/*------ footer columns ------*/
+.footer-left ,.footer-right {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    border: 1px solid red;
+}
+.footer-center {
+    border: 1px solid green;
+    width: 60%;
+    text-align: center;
+}
+.footer-right {
+    text-align: right;
+}
+
+/*------ footer columns left ------*/
+.footer-left {
+    justify-content: space-between;
+}
+.footer-left img {
+    margin-right: 6px;
+    width: 60px;
+}
+.f-a-d {
+    display: flex;
+    align-items: center;
+}
+.f-r-icon {
+    display: flex;
+    margin: 5px;
+}
+.f-r-icon i {
+    padding: 5px;
+    color: #717171;
+}
+
+.f-r-icon i:hover {
+    color: #fff;
+}
+.player-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-btn {
+    background-color: #282828;
+    border: none;
+    color: #fff;
+}
+.player-buttons i {
+    padding: 0 10px;
+}
+.play {
+    font-size: 26px;
+}
+
+.player-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-bar span {
+    margin: 0 20px;
+}
+
+.bar-played {
+    height: 5px;
+    width: 15%;
+    border-radius: 30px;
+    background-color: #c1c1c1;
+}
+.bar-unplayed {
+    height: 5px;
+    width: 35%;
+    border-radius: 30px;
+    background-color: #5a5a5a;
+}
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #c1c1c1;
+}
+

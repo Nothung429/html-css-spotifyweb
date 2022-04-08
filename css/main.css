@@ -110,64 +110,76 @@ hr {
 }
 .main-nav ul li {
     list-style: none;
-    margin: 0 10px;
+    margin: 10px;
 }
 .main-nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    width: calc(100% / 6 - 10px);
     color: #7d7f84;
-    padding-bottom: 5px;
 }
 
 /*------ music albums ------*/
 .albums {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 }
 .album {
-    flex-basis: calc((100% / 12 ) * 2 - 20px);
+    text-align: center;
+    width: calc(100% / 6 - 10px);
 }
 
 /*------ music albums description  ------*/
 .album img {
-    vertical-align: bottom;
-    min-width: 160px;
+    display: block;
 }
-.album i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    padding: 40%;
-    font-size: 40px;
-    color: transparent;
-}
-.album-name {
+.album-name > * {
     padding-top: 10px;
-    text-align: center;
 }
 .album-name p {
-    padding-top: 10px;
     color: #7d7f84;
 }
 .img-overlay.special img {
     border-radius: 50%;
 }
+.img-overlay {
+    position: relative;
+}
 
 /*------ music album overlay ------*/
-.img-overlay ,.img-overlay.special {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.8);
+.img-overlay::after {
+    content: "\f144";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 50px;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.4s;
 }
-.img-overlay.special {
+.img-overlay.special::after {
     border-radius: 50%;
 }
-.img-overlay:hover {
-    opacity: 0.6;
+.album:hover .img-overlay::after {
+    opacity: 1;
 }
-.img-overlay > i:hover {
-    color: #fff;
+
+@media screen and (max-width:700px) {
+    .album {
+        width: calc(100% / 4 - 10px);
+    }
+    .main-nav ul li a {
+        width: calc(100% / 4 - 10px);
+    }        
 }

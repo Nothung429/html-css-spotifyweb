@@ -51,9 +51,6 @@ footer {
 .footer-right {
     justify-content: flex-end;
 }
-.footer-left {
-    justify-content: space-between;
-}
 
 /*------ footer columns left ------*/
 .footer-left img {
@@ -65,10 +62,10 @@ footer {
     align-items: center;
 }
 .f-left-icon {
-    display: flex;
     margin: 5px;
 }
 .f-left-icon i {
+    text-align: right;
     padding: 5px;
     color: #717171;
 }

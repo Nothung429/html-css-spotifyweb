@@ -51,11 +51,14 @@ footer {
 .footer-right {
     justify-content: flex-end;
 }
+.footer-left {
+    justify-content: space-between;
+}
 
 /*------ footer columns left ------*/
 .footer-left img {
     margin-right: 6px;
-    width: 60px;
+    width: 20%;
 }
 .f-left-img {
     display: flex;
@@ -93,26 +96,53 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .player-bar span {
     margin: 0 20px;
 }
 .bar-played {
+    position: relative;
     height: 5px;
-    width: 15%;
+    min-width: 20%;
     border-radius: 30px;
     background-color: #c1c1c1;
 }
 .bar-unplayed {
     height: 5px;
-    width: 35%;
+    min-width: 40%;
     border-radius: 30px;
     background-color: #5a5a5a;
 }
-.circle {
-    height: 15px;
-    width: 15px;
+.bar-played::after {
+    content: "\f111";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    opacity: 0;
     border-radius: 50%;
     background-color: #c1c1c1;
+}
+.player-bar:hover .bar-played::after ,.volume:hover .bar-played::after {
+    opacity: 1;
+}
+
+/*------ footer columns left ------*/
+.volume {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.volume-btn {
+    display: flex;
+    justify-content: flex-start;
+}
+.bar-played.m-volume {
+    width: 30%;
+}
+.bar-unplayed.m-volume {
+    width: 70%;
 }
 

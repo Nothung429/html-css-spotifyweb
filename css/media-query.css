@@ -1,0 +1,80 @@
+/*------ media query md (1100px) ------*/
+@media screen and (max-width: 1100px) {
+    .album {
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+/*------ media query sm (700px) ------*/
+@media screen and (max-width: 700px) {
+    .album {
+        width: calc(100% / 2 - 10px);
+    }
+    /*------ music nav ------*/
+    .main-nav ul li a {
+        font-size: 14px;
+    }
+    /*------ footer ------*/
+    .footer-left img {
+        max-height: 50px;
+    }
+    .description ,.player-bar span {
+        font-size: 14px;
+    }
+    .f-left-img {
+        margin-right: 30px;
+    }
+}
+
+/*------ media query sm (500px) ------*/
+@media screen and (max-width: 500px) {
+    .album {
+        width: calc(100% / 2 - 10px);
+    }
+    /*------ music nav ------*/
+    .main-nav ul li a {
+        font-size: 12px;
+    }
+    /*------ sidebar ------*/
+    .name {
+        display: none;
+    }
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    header {
+        width: calc(100% - 75px);
+    }
+    .sidebar {
+        width: 75px;
+    }
+    .music {
+        width: calc(100% - 75px);
+    }
+    .sidebar-options {
+        flex-grow: 1;
+    }
+    .option-img {
+        max-width: 50%;
+    }
+    .option {
+        justify-content: center;
+        padding: 0;
+    }
+    /*------ footer ------*/
+    .footer-left img {
+        max-height: 40px;
+    }
+    .description ,.player-bar span {
+        font-size: 12px;
+    }
+    .f-left-img {
+        margin-right: 40px;
+    }
+    .f-btn i {
+        padding: 0 5px;
+    }
+}

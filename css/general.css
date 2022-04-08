@@ -26,6 +26,7 @@ button {
     color: #fff;
 }
 .main-nav ul li a:hover {
-    border-bottom: 1px solid #adff2f;
+    text-decoration: underline;
+    text-decoration-color: #adff2f;
     color: #fff;
 }

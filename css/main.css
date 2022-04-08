@@ -104,16 +104,15 @@ hr {
 }
 
 /*------ music nav ------*/
-.row {
-    flex-wrap: nowrap;
+.main-nav ul {
+    display: flex;
+    justify-content: center;
 }
 .main-nav ul li {
     list-style: none;
     margin: 0 10px;
 }
 .main-nav ul li a {
-    display: flex;
-    justify-content: center;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -159,10 +158,12 @@ hr {
 }
 
 /*------ music album overlay ------*/
-.img-overlay {
+.img-overlay ,.img-overlay.special {
     position: relative;
-    border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.8);
+}
+.img-overlay.special {
+    border-radius: 50%;
 }
 .img-overlay:hover {
     opacity: 0.6;

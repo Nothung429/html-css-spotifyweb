@@ -106,6 +106,7 @@ hr {
 /*------ music nav ------*/
 .main-nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .main-nav ul li {
@@ -116,7 +117,6 @@ hr {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
-    width: calc(100% / 6 - 10px);
     color: #7d7f84;
 }
 
@@ -175,11 +175,9 @@ hr {
     opacity: 1;
 }
 
+/*------ media query md (700px) ------*/
 @media screen and (max-width:700px) {
     .album {
         width: calc(100% / 4 - 10px);
     }
-    .main-nav ul li a {
-        width: calc(100% / 4 - 10px);
-    }        
 }

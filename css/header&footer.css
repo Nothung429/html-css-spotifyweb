@@ -124,6 +124,9 @@ footer {
 .player-bar:hover .bar-played::after ,.volume:hover .bar-played::after {
     opacity: 1;
 }
+.player-bar:hover .bar-played {
+    background-color: #adff2f;
+}
 
 /*------ footer columns left ------*/
 .volume {
@@ -140,4 +143,7 @@ footer {
 }
 .bar-unplayed.m-volume {
     width: 70%;
+}
+.volume:hover .bar-played.m-volume {
+    background-color: darkred;
 }

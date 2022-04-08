@@ -6,7 +6,7 @@ main {
 /*------ sidebar ------*/
 .sidebar {
     width: 260px;
-    height: calc(100vh - 80px);
+    height: calc(100% - 80px);
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -85,7 +85,7 @@ hr {
 
 /*------ music ------*/
 .music {
-    height: calc(100vh - 80px);
+    height: calc(100% - 80px);
     padding-top: 90px;
     padding-left: 20px;
     width: calc(100% - 260px);
@@ -176,8 +176,9 @@ hr {
 }
 
 /*------ media query md (700px) ------*/
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
     .album {
+        background-color: red;
         width: calc(100% / 4 - 10px);
     }
 }
